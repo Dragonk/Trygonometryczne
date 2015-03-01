@@ -12,17 +12,16 @@ TARGET = Trygonometryczne
 ICON = ikona.png
 TEMPLATE = app
 
+SOURCES += src/main.cpp\
+        src/mainwindow.cpp \
+    src/wyniki.cpp \
+    src/dialog.cpp \
+    src/qcustomplot.cpp
 
-SOURCES += main.cpp\
-        mainwindow.cpp \
-    wyniki.cpp \
-    dialog.cpp \
-    qcustomplot.cpp
+HEADERS  += headers/mainwindow.h \
+    headers/wyniki.h \
+    headers/dialog.h \
+    headers/qcustomplot.h
 
-HEADERS  += mainwindow.h \
-    wyniki.h \
-    dialog.h \
-    qcustomplot.h
-
-FORMS    += mainwindow.ui \
-    dialog.ui 
+FORMS    += ui/mainwindow.ui \
+    ui/dialog.ui
